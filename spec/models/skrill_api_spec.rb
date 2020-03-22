@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-class Dummie < Api;
+class Dummie < SkrillApi;
 
   def initialize(payment, account = {})
     @payment = payment
@@ -9,7 +9,7 @@ class Dummie < Api;
 
 end
 
-describe Api do
+describe SkrillApi do
 
   it 'creates params -> values from object, keys from attributes' do
 

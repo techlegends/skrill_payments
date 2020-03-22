@@ -1,4 +1,4 @@
-class Api
+class SkrillApi
 
   BASE_URL = 'https://www.moneybookers.com/app/pay.pl'
 

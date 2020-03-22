@@ -1,4 +1,4 @@
-class ExecuteTransfer < Api
+class ExecuteTransfer < SkrillApi
 
   ATTRIBUTES = [:sid]
 

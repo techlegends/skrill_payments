@@ -1,4 +1,4 @@
-class PrepareTransfer < Api
+class PrepareTransfer < SkrillApi
 
   ATTRIBUTES = [:amount, :currency, :bnf_email, :subject, :note, :frn_trn_id]
 
