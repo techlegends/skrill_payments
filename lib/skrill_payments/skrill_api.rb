@@ -35,7 +35,11 @@ class SkrillApi
   private
 
   def connection
-    Faraday.new(url: BASE_URL)
+    if ENV.has_key?('QUOTAGUARDSTATIC_URL')
+      Faraday.new(url: BASE_URL, proxy: ENV['QUOTAGUARDSTATIC_URL'])
+    else
+      Faraday.new(url: BASE_URL)
+    end
   end
 
 end
